@@ -1,0 +1,102 @@
+list1 = [10,20,30,40,50]
+size = len(list1) - 1
+for num in range(size, -1, -1):
+    print(list1[num])
+
+
+n = input()
+
+i = 0
+total = ""
+while i < len(n):
+    n = n[len(n) - 1 - i]
+    total = total + n 
+    print(total)
+    i += 1
+
+
+original = input()
+new = ""
+for char in original:
+    new = char + new
+print(original)
+print(new)
+
+
+original = input()
+i = 0
+while i < len(original):
+    print(original[i])
+    i += 1
+
+n = input()
+vowels = "aeiou"
+vtotal = 0
+consonants = 0
+i = 0
+while i < len(n):
+    if n[i].isalpha():
+        if n[i] in vowels:
+            vtotal += 1
+        else:
+            consonants += 1
+    else:
+       pass
+    i += 1
+
+print(vtotal)
+print(consonants)
+
+
+
+
+n = int(input())
+count = 0
+i = 0
+while n != 0:
+    n = n // 10
+    count += 1
+    i += 1
+print(count)
+
+
+
+
+n = int(input())
+a = n
+count = 0
+i = 0
+while n != 0:
+    n = n // 10
+    count += 1
+    i += 1
+count2 = 0
+j = 0
+while j < count:
+    x = a % 10
+    count2 = (10 * count2) + x
+    a = a // 10
+    j += 1
+print(count2)
+
+
+
+largest = 0
+smallest = 9
+n = int(input())
+a = n
+i = 0
+while n != 0:
+    n = n // 10
+    i += 1
+j = 0
+while j < i:
+    x = a % 10
+    a = a // a
+    if x > largest:
+        largest = x
+    if x < smallest:
+        smallest = x 
+    j += 1
+print(largest)
+print(smallest)
