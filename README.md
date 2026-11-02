@@ -1,2 +1,2 @@
 # labs
-Progress through my labsheets, year 1!
+Progress through small practice exercises
